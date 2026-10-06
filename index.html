@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111118">
+  <title>propuesta</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-glow glow-1"></div>
+  <div class="background-glow glow-2"></div>
+
+  <main class="container">
+
+    <section id="screen-1" class="screen active">
+      <h1 class="cherry-bomb-one-regular">Holi, tengo una propuesta.</h1>
+      <img src="assets/gatitopedidor.webp" alt="gatito pidiendo de forma cute" class="cat-image" size="300" width="300">
+      <p class="cherry-bomb-one-regular" style="font-size: 0.66rem;">Y no, no es vender herbalife.</p><br>
+      <p class="cherry-bomb-one-regular" style="font-size: 1rem;">
+        aunque si todo sale bien,<br>
+        con esto tambien podras ser tu propia jefa <br>
+        (y mia tambien de paso).
+      </p>
+      <button onclick="nextScreen()" class="cherry-bomb-one-regular">aber?🧸</button>
+    </section>
+
+    <section id="screen-2" class="screen">
+      <p>Que propongo?</p>
+      <h1 class="cherry-bomb-one-regular">Un café conmigo. ☕</h1>
+      <img src="assets/gatitosmacaco.webp" alt="gatitos brazuca" class="cat-image" size="300" width="300"><br>
+      <button class="cherry-bomb-one-regular" onclick="nextScreen()">aber x2?🧸</button>
+    </section>
+
+    <section id="screen-3" class="screen">
+      <p class="eyebrow">ARGUMENTOS COMPLETAMENTE OBJETIVOS</p>
+      <h1>3 razones por las que deberías aceptar</h1>
+
+      <div class="reasons">
+        <article class="reason">
+          <span>01</span>
+          <div>
+            <h3 class="cherry-bomb-one-regular">A nadie se le niega un cafecito.</h3>
+            <p class="cherry-bomb-one-regular">+ recien fue el dia del cafecito, excusa doble.</p>
+            <img src="assets/gatitoyoaf.webp" alt="literalmente yo si fuera un gatinho" class="cat-image" size="150" width="150">
+          </div>
+        </article>
+
+        <article class="reason">
+          <span>02</span>
+          <div>
+            <h3 class="cherry-bomb-one-regular">Ya estamos en octubre.</h3>
+            <p class="cherry-bomb-one-regular">espero ya no estes tan ocupadita.</p>
+            <img src="assets/gatitocute.webp" alt="gatito cute a secas" class="cat-image" size="150" width="150">
+          </div>
+        </article>
+
+        <article class="reason">
+          <span>03</span>
+          <div>
+            <h3 class="cherry-bomb-one-regular">Es el primer paso para que el botas y el calcetin se hagan besties.</h3>
+            <p class="cherry-bomb-one-regular">Seamos honestos, el 🦐 y el 🐈 TIENEN que ser amiguitos. Y el doggy tambien, banda delictiva de 3. </p>
+            <img src="assets/gatitoyoaf.webp" alt="literalmente yo si fuera un gatinho" class="cat-image" size="150" width="150">
+          </div>
+        </article>
+      </div>
+
+      <button class="cherry-bomb-one-regular" onclick="nextScreen()">aber x3?🧸</button>
+    </section>
+
+    <section id="screen-4" class="screen">
+      <p>PREGUNTA IMPORTANTE</p>
+      <h1 class="cherry-bomb-one-regular">Entonces solo falta una cosa..</h1>
+      <p class="cherry-bomb-one-regular" style="font-size: 4.5em;">Cafecito?</p>
+      <img src="assets/doggyyoafx2.webp" alt="yo af" class="cat-image" size="150" width="150">
+
+      <div class="buttons">
+        <button class="cherry-bomb-one-regular" background: var(--accent);color: white; onclick="acceptDate()">Sí 🦋</button>
+        <button id="maybeButton" class="cherry-bomb-one-regular" background: #292933;color: #d7d7df; onclick="moveButton()">Déjame pensarlo</button>
+      </div>
+
+      <p id="hint" class="hint"></p>
+    </section>
+
+    <section id="screen-5" class="screen">
+      <p>Sabía que tomarías una buena decisión.</p>
+
+      <div class="date-card">
+        <p>☕ <strong>Plan:</strong> cafécito</p>
+        <p>📅 <strong>Fecha:</strong> cuando tu puedas c:</p>
+        <p>📍 <strong>Lugar:</strong> Rio Intag? </p>
+        <p>👗 <strong>Dress code:</strong> lo que sea, igual te vas a ver nice.<br>
+        </p>
+      </div>
+
+      <p class="final-message">Pilas. Nos vemos.🌷🧸🌻</p>
+      <a id="confirmationLink" class="confirmation-link" target="_blank" rel="noopener noreferrer" onclick="enviarConfirmacion(); return false;" hidden>
+        Puedes confirmarme por wpp, dando click <u>aqui</u> c: (bonus asi ya tenemos nuestros numeros y si quieres, puedes mandarme un sticker de gatito o algo cute.)
+      </a>
+      <img src="assets/gatitoansias.webp" alt="yo as a gatito ansioso por salir c:" class="cat-image" size="300" width="300">
+
+    </section>
+
+  </main>
+
+  <div id="hearts"></div>
+  <script src="script.js"></script>
+</body>
+</html>
